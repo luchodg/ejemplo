@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
- <head>
   <meta charset="UTF-8">
   <base href="/ejemplo/"> <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -12,11 +11,15 @@
 
   <title>Cancionero Luciano</title>
   <link rel="manifest" href="manifest.json">
+
+  <script>
+    const serviceWorkerVersion = null;
+  </script>
+  <script src="flutter.js" defer></script>
 </head>
 <body>
   <script>
     window.addEventListener('load', function(ev) {
-      // Download main.dart.js
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
